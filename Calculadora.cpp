@@ -23,6 +23,17 @@ int seno(){
 	cout<<"El resultado es: "<<res;
 }
 
+
+double tangente(){
+	int numero;
+	double resultado;
+	cout<<"Ingrese un numero"<<endl;
+	cin>>numero;
+	resultado=tan(numero);
+	cout<<"El resultado es: "<<resultado<<endl;
+	return(0);
+}
+
 int main(){
 	int op=1,n,o;
 	
@@ -45,7 +56,7 @@ int main(){
 				
 				break;
 			case 3:
-				
+				tangente();
 				break;
 			case 4:
 				
