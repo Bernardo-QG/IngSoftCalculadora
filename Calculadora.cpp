@@ -3,6 +3,15 @@
 
 using namespace std;
 
+Coseno(){
+	int n;
+	float c;
+	cout<<"Ingresa el nuemro."<<endl;
+	cin>>n;
+	c=cos(n);
+	cout<<c<<endl;
+}
+
 int main(){
 	int op=1,n,o;
 	
@@ -22,7 +31,7 @@ int main(){
 				
 				break;
 			case 2:
-				
+				Coseno();
 				break;
 			case 3:
 				
