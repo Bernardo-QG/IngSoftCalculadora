@@ -3,6 +3,15 @@
 
 using namespace std;
 
+Coseno(){
+	int n;
+	float c;
+	cout<<"Ingresa el nuemro."<<endl;
+	cin>>n;
+	c=cos(n);
+	cout<<c<<endl;
+}
+
 
 // Calcilar el Arc coseno
 void ArcCoseno(double);
@@ -63,7 +72,7 @@ int main(){
 				seno();
 				break;
 			case 2:
-				
+				Coseno();
 				break;
 			case 3:
 				tangente();
