@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <cmath>
 
@@ -63,8 +64,7 @@ int main(){
 			<<"2-.Coseno."<<endl
 			<<"3-.Tangente."<<endl
 			<<"4-.Arco Seno."<<endl
-			<<"5-.Arco Coseno."<<endl
-			<<"6-.Arco Tangente."<<endl;
+			<<"5-.Arco Coseno."<<endl;
 		cin>>o;
 		
 		switch(o){
@@ -86,11 +86,11 @@ int main(){
 				cin>>a;
 				ArcCoseno(a);
 				break;
-			case 6:
-				
+			default :
+				cout<<"opcion no valida"<<endl;
 				break;
 		}
-		cout<<"Realizar otra operacion."<<endl
+		cout<<endl<<"Realizar otra operacion."<<endl
 			<<"1-. Si"<<endl
 			<<"0-. No"<<endl;
 		cin>>op;
