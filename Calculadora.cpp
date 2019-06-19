@@ -34,6 +34,16 @@ double tangente(){
 	return(0);
 }
 
+int arcoseno();
+int arcoseno(){
+	int n;
+	double c;
+	cout<<"Ingresa el nuemro."<<endl;
+	cin>>n;
+	c=asin(n);
+	cout<<c<<endl;
+	return (0);
+}
 int main(){
 	int op=1,n,o;
 	
@@ -59,7 +69,7 @@ int main(){
 				tangente();
 				break;
 			case 4:
-				
+				arcoseno();
 				break;
 			case 5:
 			int a;
