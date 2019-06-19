@@ -3,6 +3,15 @@
 
 using namespace std;
 
+int seno(){
+	float num;
+	double res;
+	cout<<"Ingrese el numero: ";
+	cin>>num;
+	res = sin(num);
+	cout<<"El resultado es: "<<res;
+}
+
 int main(){
 	int op=1,n,o;
 	
@@ -19,7 +28,7 @@ int main(){
 		
 		switch(o){
 			case 1:
-				
+				seno();
 				break;
 			case 2:
 				
