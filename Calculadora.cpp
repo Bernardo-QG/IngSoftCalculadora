@@ -3,6 +3,17 @@
 
 using namespace std;
 
+
+// Calcilar el Arc coseno
+void ArcCoseno(double);
+void ArcCoseno(double a){
+	
+	double c;
+ c = acos(a);
+	
+	cout<<"El Arc Coseno es:"<<c;
+}
+
 int main(){
 	int op=1,n,o;
 	
@@ -31,7 +42,10 @@ int main(){
 				
 				break;
 			case 5:
-			
+			int a;
+				cout<<"dame un numero"<<endl;
+				cin>>a;
+				ArcCoseno(a);
 				break;
 			case 6:
 				
