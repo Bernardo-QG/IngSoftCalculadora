@@ -4,6 +4,16 @@
 
 using namespace std;
 
+int suma(){
+	double a, b, suma;
+	cout<<"Ingrese el primer numero: ";
+	cin>>a;
+	cout<<"Ingrese el segundo numero: ";
+	cin>>b;
+	suma = a + b;
+	cout<<"El resultado de la suma es: "<<suma;
+}
+
 Coseno(){
 	int n;
 	float c;
@@ -91,7 +101,9 @@ int main(){
 				cin>>a;
 				ArcCoseno(a);
 				break;
-			case 6: break;
+			case 6: 
+				suma ();
+				break;
 			case 7: break;
 			case 8: break;
 			case 9: break;
