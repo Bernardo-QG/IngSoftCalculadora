@@ -60,11 +60,16 @@ int main(){
 	while(op!=0){
 		system ("CLS");
 		cout<<"Que funcion desea realizar."<<endl
-			<<"1-.Seno."<<endl
-			<<"2-.Coseno."<<endl
-			<<"3-.Tangente."<<endl
-			<<"4-.Arco Seno."<<endl
-			<<"5-.Arco Coseno."<<endl;
+			<<"1.-Seno."<<endl
+			<<"2.-Coseno."<<endl
+			<<"3.-Tangente."<<endl
+			<<"4.-Arco Seno."<<endl
+			<<"5.-Arco Coseno."<<endl
+			<<"6.-Suma."<<endl
+			<<"7.-Resta."<<endl
+			<<"8.-Multiplicacion."<<endl
+			<<"9.-Diviccion."<<endl
+			<<"10.-Valor absoluto."<<endl;
 		cin>>o;
 		
 		switch(o){
@@ -86,6 +91,11 @@ int main(){
 				cin>>a;
 				ArcCoseno(a);
 				break;
+			case 6: break;
+			case 7: break;
+			case 8: break;
+			case 9: break;
+			case 10: break;
 			default :
 				cout<<"opcion no valida"<<endl;
 				break;
