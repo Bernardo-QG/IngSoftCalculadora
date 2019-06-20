@@ -121,7 +121,6 @@ int main(){
 			<<"6.-Suma."<<endl
 			<<"7.-Resta."<<endl
 			<<"8.-Multiplicacion y division"<<endl
-			
 			<<"9.-Valor absoluto."<<endl;
 		cin>>o;
 		
@@ -147,15 +146,15 @@ int main(){
 			case 6: 
 				suma ();
 				break;
-			case 7: break;
-			case 8: MuliplicacionDivision();  break;
-			case 6: break;
-			case 7:
+			case 7: 
 				resta();
 				break;
-			case 8: break;
-			case 9: break;
-			case 10: vAbsoluto(); break;
+			case 8: 
+				MuliplicacionDivision();
+				break;
+			case 9: 
+				vAbsoluto();
+				break;
 			default :
 				cout<<"opcion no valida"<<endl;
 				break;
