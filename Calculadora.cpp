@@ -26,9 +26,20 @@ void MuliplicacionDivision()
 	cout<<Multiplicacion;
 }
 
+
+int vAbsoluto();
+int vAbsoluto(){
+	int n;
+	cout<<"Ingresa un numero."<<endl;
+	cin>>n;
+	if(n<0) n = -1*n;
+	cout<<n<<endl;
+	return (0);
+}
+
 Coseno(){
 	int n;
-	float c;
+	float c;	
 	cout<<"Ingresa el nuemro."<<endl;
 	cin>>n;
 	c=cos(n);
@@ -117,7 +128,7 @@ int main(){
 			case 7: break;
 			case 8: MuliplicacionDivision();  break;
 			case 9: break;
-			case 10: break;
+			case 10: vAbsoluto(); break;
 			default :
 				cout<<"opcion no valida"<<endl;
 				break;
