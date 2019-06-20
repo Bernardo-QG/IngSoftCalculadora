@@ -3,10 +3,63 @@
 #include <cmath>
 
 using namespace std;
+//multiplicacion y division
+void MuliplicacionDivision()
+{
+	double a,b;
+	
+	cout<<"Dame un numero"<<endl;
+	cin>>a;
+	cout<<"Dame otro numero"<<endl;
+	cin>>b;
+	
+	double Multiplicacion;
+	double Division;
+	
+	Multiplicacion = a*b;
+	Division = a/b;
+	
+	cout<<"Resultado de la divison"<<endl;
+	cout<<Division<<endl;
+	
+	cout<<"Resultado de la multiplicacion"<<endl;
+	cout<<Multiplicacion;
+}
+
+
+int vAbsoluto();
+int vAbsoluto(){
+	int n;
+	cout<<"Ingresa un numero."<<endl;
+	cin>>n;
+	if(n<0) n = -1*n;
+	cout<<n<<endl;
+	return (0);
+}
+
+int suma(){
+	double a, b, suma;
+	cout<<"Ingrese el primer numero: ";
+	cin>>a;
+	cout<<"Ingrese el segundo numero: ";
+	cin>>b;
+	suma = a + b;
+	cout<<"El resultado de la suma es: "<<suma;
+}
+
+int resta(){
+	double a, b, resta;
+	cout<<"Ingrese el primer numero: ";
+	cin>>a;
+	cout<<"Ingrese el segundo numero: ";
+	cin>>b;
+	resta = a - b;
+	cout<<"El resultado de la resta es: "<<resta;
+}
 
 Coseno(){
 	int n;
-	float c;
+	float c;	
 	cout<<"Ingresa el nuemro."<<endl;
 	cin>>n;
 	c=cos(n);
@@ -60,11 +113,15 @@ int main(){
 	while(op!=0){
 		system ("CLS");
 		cout<<"Que funcion desea realizar."<<endl
-			<<"1-.Seno."<<endl
-			<<"2-.Coseno."<<endl
-			<<"3-.Tangente."<<endl
-			<<"4-.Arco Seno."<<endl
-			<<"5-.Arco Coseno."<<endl;
+			<<"1.-Seno."<<endl
+			<<"2.-Coseno."<<endl
+			<<"3.-Tangente."<<endl
+			<<"4.-Arco Seno."<<endl
+			<<"5.-Arco Coseno."<<endl
+			<<"6.-Suma."<<endl
+			<<"7.-Resta."<<endl
+			<<"8.-Multiplicacion y division"<<endl
+			<<"9.-Valor absoluto."<<endl;
 		cin>>o;
 		
 		switch(o){
@@ -85,6 +142,18 @@ int main(){
 				cout<<"dame un numero"<<endl;
 				cin>>a;
 				ArcCoseno(a);
+				break;
+			case 6: 
+				suma ();
+				break;
+			case 7: 
+				resta();
+				break;
+			case 8: 
+				MuliplicacionDivision();
+				break;
+			case 9: 
+				vAbsoluto();
 				break;
 			default :
 				cout<<"opcion no valida"<<endl;
