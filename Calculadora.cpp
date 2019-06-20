@@ -4,6 +4,16 @@
 
 using namespace std;
 
+int resta(){
+	double a, b, resta;
+	cout<<"Ingrese el primer numero: ";
+	cin>>a;
+	cout<<"Ingrese el segundo numero: ";
+	cin>>b;
+	resta = a - b;
+	cout<<"El resultado de la resta es: "<<resta;
+}
+
 Coseno(){
 	int n;
 	float c;
@@ -92,7 +102,9 @@ int main(){
 				ArcCoseno(a);
 				break;
 			case 6: break;
-			case 7: break;
+			case 7:
+				resta();
+				break;
 			case 8: break;
 			case 9: break;
 			case 10: break;
