@@ -3,6 +3,28 @@
 #include <cmath>
 
 using namespace std;
+//multiplicacion y division
+void MuliplicacionDivision()
+{
+	double a,b;
+	
+	cout<<"Dame un numero"<<endl;
+	cin>>a;
+	cout<<"Dame otro numero"<<endl;
+	cin>>b;
+	
+	double Multiplicacion;
+	double Division;
+	
+	Multiplicacion = a*b;
+	Division = a/b;
+	
+	cout<<"Resultado de la divison"<<endl;
+	cout<<Division<<endl;
+	
+	cout<<"Resultado de la multiplicacion"<<endl;
+	cout<<Multiplicacion;
+}
 
 Coseno(){
 	int n;
@@ -67,9 +89,9 @@ int main(){
 			<<"5.-Arco Coseno."<<endl
 			<<"6.-Suma."<<endl
 			<<"7.-Resta."<<endl
-			<<"8.-Multiplicacion."<<endl
-			<<"9.-Diviccion."<<endl
-			<<"10.-Valor absoluto."<<endl;
+			<<"8.-Multiplicacion y division"<<endl
+			
+			<<"9.-Valor absoluto."<<endl;
 		cin>>o;
 		
 		switch(o){
@@ -93,7 +115,7 @@ int main(){
 				break;
 			case 6: break;
 			case 7: break;
-			case 8: break;
+			case 8: MuliplicacionDivision();  break;
 			case 9: break;
 			case 10: break;
 			default :
