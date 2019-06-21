@@ -45,6 +45,46 @@ int exponencial(){
 
 
 
+
+
+void Potencia()
+{
+	double numero,potencia,resultado;
+	
+	
+	cout<<"Ingresa un numero para elevarlo a la potencia"<<endl;
+	cin>>numero;
+	cout<<"Escoja una potencia"<<endl;
+	cin>>potencia;
+	resultado = pow(numero,potencia);
+	cout<<"El resultado es"<<endl;
+	cout<<resultado;
+	
+	
+}
+
+
+
+void Factorial()
+{
+	double numero,factorial=1;
+	int aux=0;
+	
+	cout<<"Ingresa un numero para el factorial"<<endl;
+	cin>>numero;
+	
+	for(int i=1;i<numero;i++)
+	{
+		factorial += factorial*i;
+	}
+	
+	
+	cout<<"Resultado para el factorial"<<endl;
+	cout<<factorial<<endl;
+}
+
+
+
 //multiplicacion y division
 
 void xCuadrada(){
@@ -282,6 +322,9 @@ int main(){
 			case 15: xCubica(); break;
 			case 16: break;
 			case 17:Factorial(); break;
+			case 15: break;
+			case 16: Potencia(); break;
+			case 17: Factorial(); break;
 			case 18: break;
 			case 19: break;
 			default :
