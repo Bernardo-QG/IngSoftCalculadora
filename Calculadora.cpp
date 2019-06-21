@@ -121,7 +121,17 @@ int main(){
 			<<"6.-Suma."<<endl
 			<<"7.-Resta."<<endl
 			<<"8.-Multiplicacion y division"<<endl
-			<<"9.-Valor absoluto."<<endl;
+			<<"9.-Valor absoluto."<<endl
+			<<"10.-Funcion exponencial."<<endl
+			<<"11.-Logaritmo Natural."<<endl
+			<<"12.-Logaritmo Base 10."<<endl
+			<<"13.-1/x."<<endl
+			<<"14.-x^2."<<endl
+			<<"15.-x^3."<<endl
+			<<"16.-x^y."<<endl
+			<<"17.-x!."<<endl
+			<<"18.-x^(1/2)."<<endl
+			<<"19.-Resolucion cuarática."<<endl;
 		cin>>o;
 		
 		switch(o){
@@ -155,6 +165,16 @@ int main(){
 			case 9: 
 				vAbsoluto();
 				break;
+			case 10: break;
+			case 11: break;
+			case 12: break;
+			case 13: break;
+			case 14: break;
+			case 15: break;
+			case 16: break;
+			case 17: break;
+			case 18: break;
+			case 19: break;
 			default :
 				cout<<"opcion no valida"<<endl;
 				break;
