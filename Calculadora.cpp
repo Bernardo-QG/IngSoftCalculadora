@@ -3,6 +3,27 @@
 #include <cmath>
 
 using namespace std;
+
+void Factorial()
+{
+	double numero,factorial=1;
+	int aux=0;
+	
+	cout<<"Ingresa un numero para el factorial"<<endl;
+	cin>>numero;
+	
+	for(int i=1;i<numero;i++)
+	{
+		factorial += factorial*i;
+	}
+	
+	
+	cout<<"Resultado para el factorial"<<endl;
+	cout<<factorial<<endl;
+}
+
+
+
 //multiplicacion y division
 void MuliplicacionDivision()
 {
@@ -172,7 +193,7 @@ int main(){
 			case 14: break;
 			case 15: break;
 			case 16: break;
-			case 17: break;
+			case 17:Factorial(); break;
 			case 18: break;
 			case 19: break;
 			default :
