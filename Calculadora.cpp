@@ -124,6 +124,51 @@ void MuliplicacionDivision()
 }
 
 
+void FuncionRaizCuadrada(){                                                    
+	double numero;
+	cout<<"Ingrese un numero :";
+	cin>>numero;
+	if(numero>=0)
+	{
+		double resultado=sqrt(numero);
+		cout<<"\n";
+		cout<<"El numero ingresado fue:  "<<numero<<"  y la raiz cuadrada es: "<<resultado<<endl;
+	}
+	else
+	{
+		cout<<"Por favor ingrese un numero mayo o igual a 0"<<endl;	
+	}
+}
+
+void FuncionCuadratica(){
+	double a,b,c;
+	double raiz,x1,x2;
+	cout<<"Ingrese el valor de a :";
+	cin>>a;
+	cout<<"Ingrese el valor de b :";
+	cin>>b;
+	cout<<"Ingrese el valor de c :";
+	cin>>c;
+	if(a>0){
+		if(((b*b)-(4*a*c))>=0){
+			x1=(-b+sqrt((b*b)-(4*a*c)))/(2*a);
+			x2=(-b-sqrt((b*b)-(4*a*c)))/(2*a);
+			cout<<"El resultado de x1 es: "<<x1<<endl;
+			cout<<"El resultado de x2 es: "<<x2<<endl;
+		}
+		else
+		{
+		cout<<"Las raices de x son imaginarias"<<endl;	
+		}
+	}
+
+	else
+	{
+		cout<<"Por favor ingrese un numero mayo o igual a 0 para el valor de a"<<endl;	
+	}
+	
+}
+
 int vAbsoluto();
 int vAbsoluto(){
 	int n;
@@ -327,6 +372,14 @@ int main(){
 			case 17: Factorial(); break;
 			case 18: break;
 			case 19: break;
+			case 16: break;
+			case 17: break;
+			case 18: 
+				FuncionRaizCuadrada();
+			break;
+			case 19: 
+				FuncionCuadratica();
+			break;
 			default :
 				cout<<"opcion no valida"<<endl;
 				break;
