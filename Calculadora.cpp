@@ -4,6 +4,16 @@
 
 using namespace std;
 
+int log_natural(){
+	double num_evaluar, resultado;
+	cout<<"Ingrese el numero a evaluar: ";
+	cin>>num_evaluar;
+	resultado = log(num_evaluar);
+	cout<<"El reultado del logaritmo natural es: "<<resultado;
+}
+
+
+
 int exponencial(){
 	double num_evaluar, resultado;
 	cout<<"Ingrese el numero a sacar el exponencial: ";
@@ -226,6 +236,11 @@ int main(){
 			case 9: 
 				vAbsoluto();
 				break;
+			case 10: break;
+			case 11:
+				log_natural();
+				break;
+			case 12: break;
 			case 10: 
 				exponencial();
 				break;
