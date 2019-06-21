@@ -27,6 +27,38 @@ void MuliplicacionDivision()
 }
 
 
+void FuncionRaizCuadrada(){                                                    
+	double numero;
+	cout<<"Ingrese un numero :";
+	cin>>numero;
+	if(numero>=0)
+	{
+		double resultado=sqrt(numero);
+		cout<<"\n";
+		cout<<"El numero ingresado fue:  "<<numero<<"  y la raiz cuadrada es: "<<resultado<<endl;
+	}
+	else
+	{
+		cout<<"Por favor ingrese un numero mayo o igual a 0"<<endl;	
+	}
+}
+
+void FuncionCuadratica(){
+	double a,b,c;
+	double raiz;
+	cout<<"Ingrese el valor de a :";
+	cin>>a;
+	cout<<"Ingrese el valor de b :";
+	cin>>b;
+	cout<<"Ingrese el valor de c :";
+	cin>>c;
+	if(a>0){
+		
+
+	}
+	
+}
+
 int vAbsoluto();
 int vAbsoluto(){
 	int n;
@@ -173,7 +205,10 @@ int main(){
 			case 15: break;
 			case 16: break;
 			case 17: break;
-			case 18: break;
+			case 18: 
+				FuncionRaizCuadrada();
+			break;
+				
 			case 19: break;
 			default :
 				cout<<"opcion no valida"<<endl;
