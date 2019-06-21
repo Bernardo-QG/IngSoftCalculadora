@@ -4,6 +4,13 @@
 
 using namespace std;
 //multiplicacion y division
+
+void xCuadrada(){
+	cout<<"X^2"<<endl<<"Ingrese x: ";
+	int x;
+	cin>>x;
+	cout<<"("<<x<<")^2 = "<<x*x<<endl;
+}
 void MuliplicacionDivision()
 {
 	double a,b;
@@ -169,7 +176,7 @@ int main(){
 			case 11: break;
 			case 12: break;
 			case 13: break;
-			case 14: break;
+			case 14: xCuadrada(); break;
 			case 15: break;
 			case 16: break;
 			case 17: break;
