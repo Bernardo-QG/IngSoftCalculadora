@@ -4,6 +4,14 @@
 
 using namespace std;
 //multiplicacion y division
+
+void xCubica(){
+	cout<<"X^3"<<endl<<"Ingrese x: ";
+	int x;
+	cin>>x;
+	cout<<"("<<x<<")^3 = "<<x*x*x<<endl;
+}
+
 void MuliplicacionDivision()
 {
 	double a,b;
@@ -170,7 +178,7 @@ int main(){
 			case 12: break;
 			case 13: break;
 			case 14: break;
-			case 15: break;
+			case 15: xCubica(); break;
 			case 16: break;
 			case 17: break;
 			case 18: break;
