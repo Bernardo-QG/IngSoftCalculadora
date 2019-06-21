@@ -11,6 +11,14 @@ void xCuadrada(){
 	cin>>x;
 	cout<<"("<<x<<")^2 = "<<x*x<<endl;
 }
+
+void xCubica(){
+	cout<<"X^3"<<endl<<"Ingrese x: ";
+	int x;
+	cin>>x;
+	cout<<"("<<x<<")^3 = "<<x*x*x<<endl;
+}
+
 void MuliplicacionDivision()
 {
 	double a,b;
@@ -178,6 +186,8 @@ int main(){
 			case 13: break;
 			case 14: xCuadrada(); break;
 			case 15: break;
+			case 14: break;
+			case 15: xCubica(); break;
 			case 16: break;
 			case 17: break;
 			case 18: break;
