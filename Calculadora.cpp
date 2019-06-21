@@ -145,6 +145,29 @@ LogaritmoBase10(){
 	cout<<"Resultado: "<<Resultado<<endl;
 }
 
+int Xinversa();
+Xinversa(){
+	int Numero;
+	double Resultado;
+	cout<<"Ingresa un numero"<<endl;
+	cin>>Numero;
+	system("CLS");
+	Resultado=1/Numero;
+	cout<<"Resultado: "<<Resultado<<endl;
+}
+
+
+int LogaritmoBase10();
+LogaritmoBase10(){
+	int Numero;
+	double Resultado;
+	cout<<"Ingresa un numero"<<endl;
+	cin>>Numero;
+	system("CLS");
+	Resultado=log10(Numero);
+	cout<<"Resultado: "<<Resultado<<endl;
+}
+
 int main(){
 	int op=1,n,o;
 	
@@ -207,6 +230,12 @@ int main(){
 				exponencial();
 				break;
 			case 11: break;
+			case 12: 
+				LogaritmoBase10();
+				break;
+			case 13: 
+				Xinversa();
+				break;
 			case 12: 
 				LogaritmoBase10();
 				break;
