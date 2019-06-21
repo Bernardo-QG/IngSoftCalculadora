@@ -65,23 +65,6 @@ void Potencia()
 
 
 
-void Factorial()
-{
-	double numero,factorial=1;
-	int aux=0;
-	
-	cout<<"Ingresa un numero para el factorial"<<endl;
-	cin>>numero;
-	
-	for(int i=1;i<numero;i++)
-	{
-		factorial += factorial*i;
-	}
-	
-	
-	cout<<"Resultado para el factorial"<<endl;
-	cout<<factorial<<endl;
-}
 
 
 
@@ -175,6 +158,7 @@ int vAbsoluto(){
 	cout<<"Ingresa un numero."<<endl;
 	cin>>n;
 	if(n<0) n = -1*n;
+	cout<<"El resultado es:"<<endl;
 	cout<<n<<endl;
 	return (0);
 }
@@ -256,33 +240,23 @@ LogaritmoBase10(){
 	double Resultado;
 	cout<<"Ingresa un numero"<<endl;
 	cin>>Numero;
-	system("CLS");
+	
 	Resultado=log10(Numero);
 	cout<<"Resultado: "<<Resultado<<endl;
 }
 
-int Xinversa();
-Xinversa(){
-	int Numero;
+double Xinversa();
+double Xinversa(){
+	double Numero;
 	double Resultado;
-	cout<<"Ingresa un numero"<<endl;
+	cout<<"Ingresa un numero para X en la inversa 1/X "<<endl;
 	cin>>Numero;
-	system("CLS");
+	
 	Resultado=1/Numero;
 	cout<<"Resultado: "<<Resultado<<endl;
 }
 
 
-int LogaritmoBase10();
-LogaritmoBase10(){
-	int Numero;
-	double Resultado;
-	cout<<"Ingresa un numero"<<endl;
-	cin>>Numero;
-	system("CLS");
-	Resultado=log10(Numero);
-	cout<<"Resultado: "<<Resultado<<endl;
-}
 
 int main(){
 	int op=1,n,o;
@@ -342,38 +316,26 @@ int main(){
 			case 9: 
 				vAbsoluto();
 				break;
-			case 10: break;
-			case 11:
-				log_natural();
-				break;
-			case 12: break;
+		
 			case 10: 
 				exponencial();
 				break;
-			case 11: break;
+			case 11:
+				log_natural();
+				break;
+			
 			case 12: 
 				LogaritmoBase10();
 				break;
 			case 13: 
 				Xinversa();
 				break;
-			case 12: 
-				LogaritmoBase10();
-				break;
-			case 13: break;
 			case 14: xCuadrada(); break;
-			case 15: break;
-			case 14: break;
 			case 15: xCubica(); break;
-			case 16: break;
-			case 17:Factorial(); break;
-			case 15: break;
+
 			case 16: Potencia(); break;
 			case 17: Factorial(); break;
-			case 18: break;
-			case 19: break;
-			case 16: break;
-			case 17: break;
+
 			case 18: 
 				FuncionRaizCuadrada();
 			break;
