@@ -3,6 +3,17 @@
 #include <cmath>
 
 using namespace std;
+
+int exponencial(){
+	double num_evaluar, resultado;
+	cout<<"Ingrese el numero a sacar el exponencial: ";
+	cin>>num_evaluar;
+	resultado = exp(num_evaluar);
+	cout<<"El resultado del exponencial es: "<<resultado;
+}
+
+
+
 //multiplicacion y division
 
 void xCuadrada(){
@@ -180,7 +191,9 @@ int main(){
 			case 9: 
 				vAbsoluto();
 				break;
-			case 10: break;
+			case 10: 
+				exponencial();
+				break;
 			case 11: break;
 			case 12: break;
 			case 13: break;
