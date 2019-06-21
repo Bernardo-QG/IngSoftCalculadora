@@ -3,6 +3,16 @@
 #include <cmath>
 
 using namespace std;
+
+int log_natural(){
+	double num_evaluar, resultado;
+	cout<<"Ingrese el numero a evaluar: ";
+	cin>>num_evaluar;
+	resultado = log(num_evaluar);
+	cout<<"El reultado del logaritmo natural es: "<<resultado;
+}
+
+
 //multiplicacion y division
 void MuliplicacionDivision()
 {
@@ -166,7 +176,9 @@ int main(){
 				vAbsoluto();
 				break;
 			case 10: break;
-			case 11: break;
+			case 11:
+				log_natural();
+				break;
 			case 12: break;
 			case 13: break;
 			case 14: break;
